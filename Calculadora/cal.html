@@ -14,29 +14,29 @@
     <form>
       <input type="text" id="display" value="0" disabled />
       <br />
-      <input type="button" value="%" onclick="addOperator('%')" />
-      <input type="button" value="x^" onclick="addOperator('x^')" />
-      <input type="button" value="√" onclick="addOperator('√')" />
+      <input type="button" value="%" onclick="addOperator('%')" class="operator"/>
+      <input type="button" value="x^" onclick="addOperator('x^')" class="operator"/>
+      <input type="button" value="√" onclick="addOperator('√')" class="operator"/>
       <br>
-      <input type="button" value="1" onclick="addDigit(1)" />
-      <input type="button" value="2" onclick="addDigit(2)" />
-      <input type="button" value="3" onclick="addDigit(3)" />
-      <input type="button" value="+" onclick="addOperator('+')" id="operador"/>
+      <input type="button" value="1" onclick="addDigit(1)" class="number" />
+      <input type="button" value="2" onclick="addDigit(2)" class="number" />
+      <input type="button" value="3" onclick="addDigit(3)" class="number" />
+      <input type="button" value="+" onclick="addOperator('+')" class="operator""/>
       <br />
-      <input type="button" value="4" onclick="addDigit(4)" />
-      <input type="button" value="5" onclick="addDigit(5)" />
-      <input type="button" value="6" onclick="addDigit(6)" />
-      <input type="button" value="-" onclick="addOperator('-')" />
+      <input type="button" value="4" onclick="addDigit(4)" class="number" />
+      <input type="button" value="5" onclick="addDigit(5)" class="number" />
+      <input type="button" value="6" onclick="addDigit(6)" class="number" />
+      <input type="button" value="-" onclick="addOperator('-')" class="operator"/>
       <br />
-      <input type="button" value="7" onclick="addDigit(7)" />
-      <input type="button" value="8" onclick="addDigit(8)" />
-      <input type="button" value="9" onclick="addDigit(9)" />
-      <input type="button" value="x" onclick="addOperator('*')" />
+      <input type="button" value="7" onclick="addDigit(7)" class="number" />
+      <input type="button" value="8" onclick="addDigit(8)" class="number" />
+      <input type="button" value="9" onclick="addDigit(9)" class="number" />
+      <input type="button" value="x" onclick="addOperator('*')" class="operator"/>
       <br />
-      <input type="button" value="C" onclick="clear()"/>
-      <input type="button" value="0" onclick="addDigit(0)" />
-      <input type="button" value="=" onclick="compute()" />
-      <input type="button" value="/" onclick="addOperator('/')" />
+      <input type="button" value="C" onclick="clean()" id="C"/>
+      <input type="button" value="0" onclick="addDigit(0)" class="number" />
+      <input type="button" value="=" onclick="compute()" id="igual"/>
+      <input type="button" value="/" onclick="addOperator('/')" class="operator"/>
       <br />
     </form>
  

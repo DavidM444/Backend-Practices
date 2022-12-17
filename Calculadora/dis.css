@@ -1,5 +1,8 @@
 body {
-    background-color: cornflowerblue;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0e359d, #100844);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1a7bc6, #091646); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     text-align: center;
   }
 
@@ -8,16 +11,49 @@ body {
     height: 50px;
     font-size: 20px;
     margin: 5px;
+    border-radius: 30px ;
   }
 
   #display {
     width: 225px;
     height: 50px;
     font-size: 20px;
+    font-weight: 600;
     text-align: right;
     margin: 5px;
+    background-color: rgb(233, 233, 17);
+    color: #000000;
+    border-radius: 20px;
+  }
+  .number{
+    background: #FF8008;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-weight: 700;
   }
 
+  .operator {
+    background: #1D976C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-weight: 600;
+  }
+  #C{
+    background: #D31027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EA384D, #D31027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EA384D, #D31027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-weight: 700;
+  }
+  #igual{
+    background: #08cf05;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #07a634, #32ea5d, #106d0e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2dd354, #6df08c, #11b01e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-weight: 700;
+  }
   @media only screen and (max-width: 600px) {
     input[type="button"] {
       width: 25%;
