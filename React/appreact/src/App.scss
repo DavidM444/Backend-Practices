@@ -1,0 +1,40 @@
+html {
+    background: rebeccapurple;
+    height: 100%;
+    
+}
+body {
+    width: 100%;
+    margin: auto;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    background-color: rgb(132, 228, 37);
+    height: 42vh;
+    width: 40vh;
+    display: flex;
+    position: relative;
+}
+.subbox{
+    background-color: darkred;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.capa {
+    width: 70%;
+    height: 90%;
+    background-color: rgb(222, 221, 223);
+    margin: auto;
+}
