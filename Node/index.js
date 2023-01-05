@@ -1,12 +1,14 @@
-
-let http = require('http');
-const rd = require('./modules/retrieve')
+const http = require('http');
+const fs = require('fs');
 
 http.createServer((req, res) =>{
-    res.writeHead(200,{
-        'Content-Type':'text/html'
+    fs.readFile('./demo.html', function(err, data) {
+        res.writeHead(200,{'Content-Type':'text/html'});
+        res.write(data);
+        return res.end();
     });
-    res.write("la fecha es: " + rd.retrieveDate());
-    res.end("hiii")
-}).listen(4800)
+}).listen(3200)
 
+http.createServer((req, res) =>{
+    res.write(200,{'Content-Type': 'text/html'})
+} )
